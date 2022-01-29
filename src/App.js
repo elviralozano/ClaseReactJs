@@ -1,16 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { Nav } from "./componentes/Nav/Nav";
+import { ItemList } from "./ItemsList.js/itemList";
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Proyecto Elvira Lozano
-        </p>
-      </header>
-    </div>
+    <>
+      <Nav/>
+      <ItemList greeting="En proceso"/>
+    </>
   );
 }
 
